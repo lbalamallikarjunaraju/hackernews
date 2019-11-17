@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackernews.hacker.api.HackerNewsReaderTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-11-17T06:55:10" hostname="balamallikarjuna-ThinkPad-E590" time="5.678">
+  <properties/>
+  <testcase name="testInputValidation" classname="com.hackernews.hacker.api.HackerNewsReaderTest" time="0.023"/>
+  <testcase name="testInputValidationInvalidPage" classname="com.hackernews.hacker.api.HackerNewsReaderTest" time="1.442"/>
+  <testcase name="testGetNews" classname="com.hackernews.hacker.api.HackerNewsReaderTest" time="0.786"/>
+  <testcase name="testReadNews" classname="com.hackernews.hacker.api.HackerNewsReaderTest" time="1.445"/>
+  <testcase name="testInputValidationZeroRecords" classname="com.hackernews.hacker.api.HackerNewsReaderTest" time="0.0"/>
+  <testcase name="testInputValidationInvalidRecords" classname="com.hackernews.hacker.api.HackerNewsReaderTest" time="0.604"/>
+  <testcase name="testCommentsValidation" classname="com.hackernews.hacker.api.HackerNewsReaderTest" time="1.375"/>
+  <testcase name="testInputValidationInvalidURL" classname="com.hackernews.hacker.api.HackerNewsReaderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
