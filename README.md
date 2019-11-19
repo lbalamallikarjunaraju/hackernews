@@ -34,6 +34,7 @@ Run as a docker:
 * docker build -t hackerorg/hackernews .
 * docker run -e HACKERNEWS="hackernews --posts #noOfNews" hackerorg/hackernews
     * replace '#noOfNews' with any integer value
+    * e.g.  ``docker run -e HACKERNEWS="hackernews --posts 1" hackerorg/hackernews``
     
 From command prompt:
 * Linux/Mac: 
@@ -41,13 +42,15 @@ From command prompt:
     * ./gradlew clean build
     * ./gradlew build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts #noOfNews
         * replace '#noOfNews' with any integer value
+        * e.g. ``./gradlew build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts 1``
 * Windows:
     * Open command-prompt and navigate to the project folder. e.g. cd path/to/the/project/folder
     * gradlew.bat clean build
     * gradlew.bat build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts #noOfNews
         * replace '#noOfNews' with any integer value
+        * e.g. ``./gradlew build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts 1``
 ```$json
-$ ./gradlew build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts
+$ ./gradlew build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts 1
 
 > Task :run
 [
