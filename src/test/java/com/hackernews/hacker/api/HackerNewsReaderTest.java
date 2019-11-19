@@ -25,6 +25,7 @@ public class HackerNewsReaderTest {
     }
 
     private void validateResult(String jsonArray, int expectedRecordsCount) {
+        HackerNewsReaderImpl.clear();
         HackerNews[] newsArray = gson.fromJson(jsonArray, HackerNews[].class);
         Assert.assertEquals(expectedRecordsCount, newsArray.length);
         for (HackerNews news : newsArray) {
@@ -49,11 +50,6 @@ public class HackerNewsReaderTest {
         String jsonArray = reader.getTopRankedNews(1);
         Assert.assertNotNull(jsonArray);
         validateResult(jsonArray, 1);
-    }
-
-    @Test(expected = RuntimeException.class)
-    public void testCommentsValidation() {
-        reader.getTopRankedNews(22);
     }
 
     @Test(expected = RuntimeException.class)
@@ -83,6 +79,7 @@ public class HackerNewsReaderTest {
 
     @Test
     public void testReadNews() {
+        HackerNewsReaderImpl.clear();
         reader.readNews(HACKER_NEWS_URL, 1, 1);
         validateResult(reader.getSavedNews(), 1);
     }

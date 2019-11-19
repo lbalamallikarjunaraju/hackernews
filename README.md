@@ -3,6 +3,7 @@
 #### Pre Requisites:
 * Java - JDK 1.8
 * Git
+* Docker
 
 #### Libraries:
 * JSoup:
@@ -15,21 +16,38 @@
     * Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java.
       Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more.
 
+#### Plugins:
+* Spring-Boot gradle plugin:
+    * For dependency management in docker
+* Palantir gradle plugin:
+    * Docker plugin for gradle
+
 ##### Clone the project:
 * Open command prompt and run this command:
     * git clone https://github.com/lbalamallikarjunaraju/hackernews.git
 
 ##### How to run:
+Run as a docker:
+
+* Open terminal and navigate to the project folder. e.g. cd path/to/the/project/folder
+* ./gradlew clean build
+* docker build -t hackerorg/hackernews .
+* docker run -e HACKERNEWS="hackernews --posts #noOfNews" hackerorg/hackernews
+    * replace '#noOfNews' with any integer value
+    
+From command prompt:
 * Linux/Mac: 
     * Open terminal and navigate to the project folder. e.g. cd path/to/the/project/folder
     * ./gradlew clean build
-    * ./gradlew run --args='hackernews --posts #noOfRecords' e.g. ./gradlew run --args='hackernews --posts 37'
+    * ./gradlew build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts #noOfNews
+        * replace '#noOfNews' with any integer value
 * Windows:
     * Open command-prompt and navigate to the project folder. e.g. cd path/to/the/project/folder
     * gradlew.bat clean build
-    * gradlew.bat run --args='hackernews --posts #noOfRecords' e.g. ./gradlew run --args='hackernews --posts 37'
+    * gradlew.bat build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts #noOfNews
+        * replace '#noOfNews' with any integer value
 ```$json
-$ ./gradlew run --args='hackernews --posts 3'
+$ ./gradlew build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts
 
 > Task :run
 [

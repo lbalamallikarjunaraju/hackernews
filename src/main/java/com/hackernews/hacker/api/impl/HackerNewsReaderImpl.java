@@ -19,7 +19,7 @@ import java.util.TreeMap;
 import static com.hackernews.hacker.util.Constants.*;
 
 public class HackerNewsReaderImpl implements HackerNewsReader {
-    private SortedMap<Integer, HackerNews> hackerNewsMap;
+    private static SortedMap<Integer, HackerNews> hackerNewsMap;
 
     /**
      * Navigates to the URL and reads all the web elements to get the required fields.
@@ -188,6 +188,12 @@ public class HackerNewsReaderImpl implements HackerNewsReader {
         }
         return toJson(hackerNewsMap);
 
+    }
+
+    public static void clear(){
+        if(hackerNewsMap != null){
+            hackerNewsMap.clear();
+        }
     }
 
     private String toJson(SortedMap<Integer, HackerNews> sortedNewsMap) {
