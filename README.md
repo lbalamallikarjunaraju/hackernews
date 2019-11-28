@@ -6,8 +6,10 @@
 * Git
   > https://www.atlassian.com/git/tutorials/install-git
 * Docker
-  > https://docs.docker.com/docker-for-windows/ or https://docs.docker.com/docker-for-windows/install/
+  > https://docs.docker.com/docker-for-windows/install/
+           
   > https://docs.docker.com/install/linux/docker-ce/ubuntu/
+                                                                                                                              
   > https://docs.docker.com/v17.12/docker-for-mac/install/#install-and-run-docker-for-mac
 
 ## Usage
