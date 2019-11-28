@@ -20,11 +20,13 @@
 #### How to run:
 ###### Run as a docker:
 
-* Open terminal and navigate to the project folder. e.g. cd path/to/the/project/folder
-* ./gradlew clean build
-* docker build -t hackerorg/hackernews .
-* docker run -e HACKERNEWS="hackernews --posts #noOfNews" hackerorg/hackernews
-    * replace '#noOfNews' with any integer value
+* Navigate to project folder: 
+    * `Linux/Mac`: Open terminal and navigate to the project folder. e.g. cd path/to/the/project/folder
+    * `Windows`: Open `Docker Desktop` and navigate to the project folder. e.g. cd path/to/the/project/folder
+* `./gradlew clean build` OR `gradlew.bat clean build` 
+* `docker build -t hackerorg/hackernews .`
+* `docker run -e HACKERNEWS="hackernews --posts #noOfNews" hackerorg/hackernews`
+    * replace `#noOfNews` with any integer value
     * e.g.  ``docker run -e HACKERNEWS="hackernews --posts 1" hackerorg/hackernews``
     
 ###### Run from command prompt:
