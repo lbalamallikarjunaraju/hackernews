@@ -1,7 +1,6 @@
 # HackerNews Reader
 
 #### Pre Requisites:
-##### Mandatory:
 * Java - JDK 1.8
    > https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html
 * Git
