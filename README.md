@@ -49,6 +49,8 @@ From command prompt:
     * gradlew.bat build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts #noOfNews
         * replace '#noOfNews' with any integer value
         * e.g. ``gradlew.bat build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts 1``
+
+Sample Output:
 ```$json
 $ ./gradlew build && java -jar build/libs/hackernews-docker-0.1.0.jar hackernews --posts 1
 
